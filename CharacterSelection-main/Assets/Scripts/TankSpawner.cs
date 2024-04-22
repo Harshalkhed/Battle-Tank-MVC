@@ -23,14 +23,30 @@ public class TankSpawner : MonoBehaviour
 
     void Start()
     {
-        CreateTank();
+        //CreateTank();
         
     }
-    private void CreateTank()
+    public void CreateTank(TankType tankType)
 
     {
-        TankModel tankModel = new TankModel(tankList[1].movementSpeed,tankList[1].rotationSpeed,tankList[1].tankType,tankList[1].color);
-        TankController tankController = new TankController(tankModel, tankView);
+        if(tankType==TankType.Bluetank)
+        {
+            TankModel tankModel = new TankModel(tankList[1].movementSpeed, tankList[1].rotationSpeed, tankList[1].tankType, tankList[1].color);
+            TankController tankController = new TankController(tankModel, tankView);
+
+        }
+       else if (tankType == TankType.GreenTank)
+        {
+            TankModel tankModel = new TankModel(tankList[0].movementSpeed, tankList[0].rotationSpeed, tankList[0].tankType, tankList[0].color);
+            TankController tankController = new TankController(tankModel, tankView);
+
+        }
+       else if (tankType == TankType.Bluetank)
+        {
+            TankModel tankModel = new TankModel(tankList[2].movementSpeed, tankList[2].rotationSpeed, tankList[2].tankType, tankList[2].color);
+            TankController tankController = new TankController(tankModel, tankView);
+
+        }
     }
     
 }
