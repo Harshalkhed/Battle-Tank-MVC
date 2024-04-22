@@ -18,6 +18,8 @@ public class TankController
         tankModel.SetTankController(this);
         tankView.SetTankController(this);
 
+        tankView.ChangeColor(tankModel.color);
+
         
     }
 

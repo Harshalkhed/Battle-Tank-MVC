@@ -154,6 +154,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tankView: {fileID: 8297371943962897240, guid: fe26f041dd040456d94434bee9d3753b,
     type: 3}
+  tankList:
+  - movementSpeed: 30
+    rotationSpeed: 20
+    tankType: 0
+  - movementSpeed: 40
+    rotationSpeed: 80
+    tankType: 2
+  - movementSpeed: 10
+    rotationSpeed: 10
+    tankType: 1
 --- !u!4 &260070010
 Transform:
   m_ObjectHideFlags: 0

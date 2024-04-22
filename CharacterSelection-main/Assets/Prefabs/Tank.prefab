@@ -420,6 +420,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tankRigidbody: {fileID: 3819295729965275685}
+  childs:
+  - {fileID: 7591237863223315582}
+  - {fileID: 7591237863223315576}
+  - {fileID: 7591237863223315574}
+  - {fileID: 7591237863223315580}
 --- !u!54 &3819295729965275685
 Rigidbody:
   m_ObjectHideFlags: 0
